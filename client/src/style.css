@@ -124,10 +124,61 @@ body {
 }
 
 .options-container input[type="button"] {
-  border: 1px solid black;
+  border: 2px solid #00718d;
+
   cursor: pointer;
   outline: none;
   width: 60px;
   height: 60px;
   margin-left: 20px;
+}
+
+.options-container > fieldset {
+  border: 0px;
+}
+
+.options-size-button {
+  height: 30px;
+}
+
+.options-form-legend {
+  margin-right: 10px;
+}
+
+.options-form-quantity .options-form-legend{
+  display: block;
+}
+
+.options-form-quantity button {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.options-form-quantity input {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+.options-form-quantity {
+  border: 0;
+}
+
+.options-form-quantity-container {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+.options-container .form-submit {
+  display: inline;
+  background-color:#00718d;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 120px;
+  margin-top: 24px;
 }

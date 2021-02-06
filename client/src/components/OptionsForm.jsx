@@ -19,7 +19,7 @@ export default function OptionsForm() {
       <li key={colorVal} className={className}>
         <input
           type="button"
-          className="options-size-button"
+          className="options-color-button"
           alt={colorName}
           onClick={() => {
             setCurrentOption(i);
@@ -72,22 +72,24 @@ export default function OptionsForm() {
         </ul>
       </fieldset>
 
-      <fieldset className="options-form-quantity">
-        <span className="options-form-legend">Quantity:</span>
+      <div className="options-form-quantity-container">
+        <fieldset className="options-form-quantity">
+          <span className="options-form-legend">Quantity:</span>
 
-        <button type="button" onClick={() => changeQuantity(-1)}>-</button>
+          <button type="button" onClick={() => changeQuantity(-1)}>-</button>
 
-        <input
-          type="text"
-          className="options-quantity"
-          value={quantity}
-          readOnly
-        />
+          <input
+            type="text"
+            className="options-quantity"
+            value={quantity}
+            readOnly
+          />
 
-        <button type="button" onClick={() => changeQuantity(1)}>+</button>
-      </fieldset>
+          <button type="button" onClick={() => changeQuantity(1)}>+</button>
+        </fieldset>
 
-      <button className="form-submit" type="submit">Add to cart</button>
+        <button className="form-submit" type="submit">Add to cart</button>
+      </div>
     </div>
   );
 }
